@@ -1,2 +1,20 @@
-<h1>Properties#index</h1>
-<p>Find me in app/views/properties/index.html.erb</p>
+<section class="row mt-3">
+  <div class="col-7">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <% @properties.each do |property|%>
+        <div class="col">
+          <div class="card ">
+            <%= image_tag(property.images[2], class:" card-img-top rounded p-2") %>
+            <div class="card-body">
+              <h5 class="card-title"><%= property.name %></h5>
+              <h6 class="card-subtitle mb-4 mt-2">1 quarto</h6>
+              <h5 class="card-text">R$ 6.780/mês</h5>
+            </div>
+          </div>
+        </div>
+      <% end%>
+    </div>
+  </div>
+  <div class="col-4">
+  </div>
+</section>
