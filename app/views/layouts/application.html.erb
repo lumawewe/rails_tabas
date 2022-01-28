@@ -8,7 +8,18 @@
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-  <body>
+  <body class="bg-light">
+    <nav class="navbar sticky-top navbar-light bg-white">
+      <div class="container d-flex justify-content-between">
+        <a href="#" class="navbar-brand mb-0 h1">TABAS</a href="#">
+        <a href="#" class="navbar-brand mb-0  fs-5 text-muted">São Paulo</a href="#">
+        <div>
+          <a href="#" class="navbar-brand mb-0 fs-5 ">Suporte</a href="#">
+          <a href="#" class="navbar-brand mb-0  fs-5 ">Registrar</a href="#">
+          <a href="#" class="navbar-brand mb-0 fs-5 ">Entrar</a href="#">
+        </div>
+      </div>
+    </nav>
     <%= yield %>
   </body>
 </html>
