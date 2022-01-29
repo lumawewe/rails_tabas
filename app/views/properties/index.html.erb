@@ -1,7 +1,12 @@
-<div class="row row-cols-1 row-cols-md-2 g-4">
+<% if @properties.empty? %>
+  <div class="alert alert-danger text-center" role="alert">
+    <h4 class="alert-heading">Please Run 'rails db:seed'</h4>
+  </div>
+<% end%>
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
   <% @properties.each do |property|%>
-    <div class="col" style="width: 25%">
-      <div class="card" >
+    <div class="col">
+      <div class="card m-2" >
         <%= image_tag(property.images[2], class:" card-img-top rounded p-2") %>
         <div class="card-body">
           <h5 class="card-title"><%= property.name %></h5>
@@ -11,5 +16,4 @@
       </div>
     </div>
   <% end%>
-</div>
 </div>
