@@ -11,12 +11,13 @@
   <body class="bg-light">
     <nav class="navbar sticky-top navbar-light bg-white">
       <div class="container d-flex justify-content-between">
-        <a href="#" class="navbar-brand mb-0 h1">TABAS</a href="#">
-        <a href="#" class="navbar-brand mb-0  fs-5 text-muted">São Paulo</a href="#">
+        <a href="#" class="navbar-brand mb-0 h1"><%= image_pack_tag 'media/images/icon-tabas.svg', size:"110x28" %></a href="#">
+        <button type="button" class="btn btn-link navbar-brand mb-0  fs-5 " data-bs-toggle="modal" data-bs-target="#exampleModal">Explore • São Paulo <i class="fa-solid fa-angle-down"></i></button>
         <div>
-          <a href="#" class="navbar-brand mb-0 fs-5 ">Suporte</a href="#">
-          <a href="#" class="navbar-brand mb-0  fs-5 ">Registrar</a href="#">
-          <a href="#" class="navbar-brand mb-0 fs-5 ">Entrar</a href="#">
+          <button  class="btn btn-link navbar-brand mb-0  fs-5  navbar-brand mb-0 fs-5 "><i class="fa-solid fa-globe"></i></button >
+          <button  class="btn btn-link navbar-brand mb-0  fs-5  navbar-brand mb-0 fs-5 ">Suporte</button >
+          <button  class="btn btn-link navbar-brand mb-0  fs-5  navbar-brand mb-0  fs-5 ">Registrar</button >
+          <button  class="btn btn-link navbar-brand mb-0  fs-5  navbar-brand mb-0 fs-5 "><i class="fa-solid fa-user"></i> Entrar</button >
         </div>
       </div>
     </nav>
